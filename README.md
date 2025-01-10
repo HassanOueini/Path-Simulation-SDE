@@ -19,8 +19,8 @@ Make sure you have C++17 or later. A compiler such as g++ or clang++. Make tool 
 3. Run the simulator (./SDE_Simulator) 
 
 ## The Math Behind It 
-The simulator uses Geometric Brownian Motion (GBM) to model the asset price over time. The SDE is given by: $$dS_t = \mu S_t dt + \sigma S_t dW_t$$  Where $S_t$ is the price of the asset at time t. $\mu$ is the drift term (the expected return or growth rate of asset). $\sigma$ is the volatility (standard deviation of returns). $dW_t$ is the increment of a Wiener process (also known as Brownian motion). In discrete time, the equation is approximated as: $$ \text{SDE::SDE}(double \, \mu, double \, \sigma, double \, S_0, double \, dt, int \, \text{steps}, int \, \text{numPaths})
-: \, \mu(\mu), \sigma(\sigma), S_0(S_0), dt(dt), \text{steps}(\text{steps}), \text{numPaths}(\text{numPaths}) \, \{\} $$
+The simulator uses Geometric Brownian Motion (GBM) to model the asset price over time. The SDE is given by: $$dS_t = \mu S_t dt + \sigma S_t dW_t$$  Where $S_t$ is the price of the asset at time t. $\mu$ is the drift term (the expected return or growth rate of asset). $\sigma$ is the volatility (standard deviation of returns). $dW_t$ is the increment of a Wiener process (also known as Brownian motion). In discrete time, the equation is approximated as: $$\text{SDE::SDE}(double \, \mu, double \, \sigma, double \, S_0, double \, dt, int \, \text{steps}, int \, \text{numPaths})
+: \, \mu(\mu), \sigma(\sigma), S_0(S_0), dt(dt), \text{steps}(\text{steps}), \text{numPaths}(\text{numPaths}) \, \{\}$$
 
 ## Parameters and Their Interactions:
 
