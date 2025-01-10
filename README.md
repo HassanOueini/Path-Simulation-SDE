@@ -36,4 +36,4 @@ The simulator outputs the following:
 1. **Path Mean**: The average price of the asset over all simulated paths at each time step.
 2. **Path Variance**: The variance of the asset's price over all simulated paths at each time step.
 3. **CSV File**: A CSV file with the simulated paths. Each row represents a time step, and each column represents the price of the asset at that time step for each path.
-4. **Current Parameters**: The current parameters that are being run as test are as follows: mu - 0.08, sigma - 0.1, S0 - 100, dt - 0.005, steps = 1000, numPaths = 5. A screenshot of running the code is under PotentialOutputSS.png. 
+4. **Current Parameters**: The current parameters that are being run as test are as follows: mu = 0.08, sigma = 0.1, S0 = 100, dt = 0.005, steps = 1000, numPaths = 5. A screenshot of running the code is under PotentialOutputSS.png. 
