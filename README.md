@@ -19,7 +19,8 @@ Make sure you have C++17 or later. A compiler such as g++ or clang++. Make tool 
 3. Run the simulator (./SDE_Simulator) 
 
 ## The Math Behind It 
-The simulator uses Geometric Brownian Motion (GBM) to model the asset price over time. The SDE is given by: $$dS_t = \mu S_t dt + \sigma S_t dW_t$$  Where $S_t$ is the price of the asset at time t. $\mu$ is the drift term (the expected return or growth rate of asset). $\sigma$ is the volatility (standard deviation of returns). $dW_t$ is the increment of a Wiener process (also known as Brownian motion). In discrete time, the equation is approximated as: 
+The simulator uses Geometric Brownian Motion (GBM) to model the asset price over time. The SDE is given by: $$dS_t = \mu S_t dt + \sigma S_t dW_t$$  Where $S_t$ is the price of the asset at time t. $\mu$ is the drift term (the expected return or growth rate of asset). $\sigma$ is the volatility (standard deviation of returns). $dW_t$ is the increment of a Wiener process (also known as Brownian motion). In discrete time, the equation is approximated as: $$ \text{SDE::SDE}(double \, \mu, double \, \sigma, double \, S_0, double \, dt, int \, \text{steps}, int \, \text{numPaths})
+: \, \mu(\mu), \sigma(\sigma), S_0(S_0), dt(dt), \text{steps}(\text{steps}), \text{numPaths}(\text{numPaths}) \, \{\} $$
 
 ## Parameters and Their Interactions:
 
@@ -37,3 +38,4 @@ The simulator outputs the following:
 2. **Path Variance**: The variance of the asset's price over all simulated paths at each time step.
 3. **CSV File**: A CSV file with the simulated paths. Each row represents a time step, and each column represents the price of the asset at that time step for each path.
 4. **Current Parameters**: The current parameters that are being run as test are as follows: mu = 0.08, sigma = 0.1, S0 = 100, dt = 0.005, steps = 1000, numPaths = 5. A screenshot of running the code is under PotentialOutputSS.png. 
+ 
