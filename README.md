@@ -1,13 +1,13 @@
 # Path-Simulation-SDE
 The SDE Simulator is a C++ project that simulates the paths of a stochastic differential equation (SDE), typically used in financial modeling, physics, and other fields requiring probabilistic simulations. This project implements the Geometric Brownian Motion (GBM) model, a popular SDE used in stock price modeling, using a numerical solution for discrete time steps.
 # What It Does
-The simulator generates multiple paths of the stock price over time, based on a set of user-defined parameters such as the drift rate (mu), volatility (sigma), and initial price (S0). It then allows for analysis of the generated paths (mean, variance) and stores the results.
+The simulator generates multiple paths of the stock price over time, based on a set of user-defined parameters such as the drift rate ($\mu$), volatility ($\sigma$), and initial price (S0). It then allows for analysis of the generated paths (mean, variance) and stores the results.
 # How to Modify It
 - To modify the behavior of the simulator, you can change the following parameters:
-- mu: Drift rate of the process (expected return or growth rate of the asset).
-- sigma: Volatility of the asset (how much it fluctuates). 
+- $\mu$: Drift rate of the process (expected return or growth rate of the asset).
+- $\sigma$: Volatility of the asset (how much it fluctuates). 
 - S0: initial value of the asset.
-- dt: Time step size for the simulation. Smaller values give more precise results at the cost of performance. 
+- $dt$: Time step size for the simulation. Smaller values give more precise results at the cost of performance. 
 - steps: The number of time steps for each path simulation. 
 - numPaths: The number of paths to simulate. 
 - You can also modifty the RandomGenerator calss to use different random distributions or the PathAnalyzer class to analyze the paths in different ways. 
@@ -23,10 +23,10 @@ The simulator uses Geometric Brownian Motion (GBM) to model the asset price over
 
 ## Parameters and Their Interactions:
 
-- **`mu`**: The drift term represents the average return rate of the asset. A higher value of `mu` means the asset is expected to grow faster over time.
-- **`sigma`**: This parameter controls the volatility of the asset. A higher value of `sigma` means more fluctuations in the asset's price.
+- **`$\mu$`**: The drift term represents the average return rate of the asset. A higher value of `$\mu$` means the asset is expected to grow faster over time.
+- **`$\sigma$`**: This parameter controls the volatility of the asset. A higher value of `$\sigma$` means more fluctuations in the asset's price.
 - **`S0`**: The initial price of the asset. This can be any positive value and will be the starting point for each simulation.
-- **`dt`**: The time step determines the precision of the simulation. Smaller `dt` values result in a more accurate path but require more computational steps.
+- **`$\dt$`**: The time step determines the precision of the simulation. Smaller `dt` values result in a more accurate path but require more computational steps.
 - **`steps`**: The total number of time steps in the simulation. This is linked to the time horizon over which you want to simulate the asset's price.
 - **`numPaths`**: The number of different simulated paths. More paths provide a better estimate of the statistical properties of the asset's price.
 
