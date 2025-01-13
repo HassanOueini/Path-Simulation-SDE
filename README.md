@@ -26,8 +26,8 @@ The simulator uses Geometric Brownian Motion (GBM) to model the asset price over
 
 ## Parameters and Their Interactions:
 
-- **`mu`**: The drift term represents the average return rate of the asset. A higher value of `$\mu$` means the asset is expected to grow faster over time.
-- **`sigma`**: This parameter controls the volatility of the asset. A higher value of `$\sigma$` means more fluctuations in the asset's price.
+- **`mu`**: The drift term represents the average return rate of the asset. A higher value of `mu` means the asset is expected to grow faster over time.
+- **`sigma`**: This parameter controls the volatility of the asset. A higher value of `sigma` means more fluctuations in the asset's price.
 - **`S0`**: The initial price of the asset. This can be any positive value and will be the starting point for each simulation.
 - **`dt`**: The time step determines the precision of the simulation. Smaller `dt` values result in a more accurate path but require more computational steps.
 - **`steps`**: The total number of time steps in the simulation. This is linked to the time horizon over which you want to simulate the asset's price.
