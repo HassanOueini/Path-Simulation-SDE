@@ -1,5 +1,9 @@
 # Path-Simulation-SDE
 The SDE Simulator is a C++ project that simulates the paths of a stochastic differential equation (SDE), typically used in financial modeling, physics, and other fields requiring probabilistic simulations. This project implements the Geometric Brownian Motion (GBM) model, a popular SDE used in stock price modeling, using a numerical solution for discrete time steps.
+
+# Abstract 
+This project is a simulation of stock price movements using the concept of Geometric Brownian Motion (GBM). GBM is similar to a "random walk" idea. Imagine starting at a crossroads and taking steps in random directions—sometimes forward, sometimes backward. Over time, your position changes unpredictably. In this context, the "steps" represent small time intervals, and the "directions" reflect the random fluctuations of a stock's price due to market factors. The goal of this project is to answer two main questions: After a certain number of steps (or time intervals), where might the stock's price end up? Over a specified time frame, how does the stock's price evolve? This simulation provides a mathematical and computational way to visualize and analyze the potential paths a stock's price could take over time.
+
 # What It Does
 The simulator generates multiple paths of the stock price over time, based on a set of user-defined parameters such as the drift rate ($\mu$), volatility ($\sigma$), and initial price (S0). It then allows for analysis of the generated paths (mean, variance) and stores the results.
 # How to Modify It
