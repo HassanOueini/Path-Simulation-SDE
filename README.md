@@ -14,7 +14,7 @@ The simulator generates multiple paths of the stock price over time, based on a 
 - $dt$: Time step size for the simulation. Smaller values give more precise results at the cost of performance. 
 - steps: The number of time steps for each path simulation. 
 - numPaths: The number of paths to simulate. 
-- You can also modifty the RandomGenerator calss to use different random distributions or the PathAnalyzer class to analyze the paths in different ways. 
+- You can also modify the RandomGenerator calss to use different random distributions or the PathAnalyzer class to analyze the paths in different ways. 
 
 ## How to Run it
 Make sure you have C++17 or later. A compiler such as g++ or clang++. Make tool to build the project (if using the provided Makefile). After making sure of all those prerequisites:
